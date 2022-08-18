@@ -1,2 +1,5 @@
-FROM tomcat:8.0.20-jre8
-COPY target/test1.war /usr/local/tomcat/webapps/test1.war
+FROM openjdk
+COPY target/test1.war /
+EXPOSE 8080
+ENTRYPOINT ["java","-jar","test1.war"]
+
