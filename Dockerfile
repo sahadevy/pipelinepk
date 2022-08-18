@@ -1,5 +1,3 @@
-FROM openjdk
-COPY target/test1.war /
-EXPOSE 8080
-ENTRYPOINT ["java","-jar","test1.war"]
-
+FROM tomcat:8.0.20
+# Dummy test
+COPY target/test1.war /usr/local/tomcat/webapps/test1.war
