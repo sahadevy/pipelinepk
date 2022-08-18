@@ -1,3 +1,3 @@
-FROM tomcat:8.0.20
+FROM tomcat
 # Dummy test
-COPY target/test1.war /usr/local/tomcat/webapps/test1.war
+COPY target/test1.war /usr/local/tomcat/webapps/*.war
